@@ -1,8 +1,9 @@
 {
     'name': 'AI Livechat Agent',
-    'version': '16.0.1.0.0',
+    'version': '17.0.1.0.0',
     'category': 'Website/Live Chat',
     'summary': 'AI Agent integration with Odoo Livechat and agent handoff',
+    'license': 'LGPL-3',
     'depends': ['im_livechat', 'mail'],
     'data': [
         'views/livechat_channel_views.xml',
