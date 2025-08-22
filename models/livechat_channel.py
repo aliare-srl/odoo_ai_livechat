@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class LivechatChannel(models.Model):
     _inherit = 'im_livechat.channel'
@@ -9,4 +9,4 @@ class LivechatChannel(models.Model):
     ai_handoff_keywords = fields.Text('Handoff Keywords', 
                                      default='human,agent,speak to someone,transfer')
     ai_greeting = fields.Text('AI Greeting Message', 
-                             default='Hello! I\'m an AI assistant. How can I help you today?')
+                             default='Hello! I am an AI assistant. How can I help you today?')
