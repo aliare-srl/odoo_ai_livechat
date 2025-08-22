@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="livechat_channel_form_ai" model="ir.ui.view">
+        <field name="name">im_livechat.channel.form.ai</field>
+        <field name="model">im_livechat.channel</field>
+        <field name="inherit_id" ref="im_livechat.livechat_channel_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='options']" position="after">
+                <group string="AI Agent Configuration" name="ai_config">
+                    <field name="ai_enabled"/>
+                    <field name="ai_endpoint" attrs="{'invisible': [('ai_enabled', '=', False)]}"/>
+                    <field name="ai_api_key" password="True" attrs="{'invisible': [('ai_enabled', '=', False)]}"/>
+                    <field name="ai_greeting" attrs="{'invisible': [('ai_enabled', '=', False)]}"/>
+                    <field name="ai_handoff_keywords" attrs="{'invisible': [('ai_enabled', '=', False)]}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
