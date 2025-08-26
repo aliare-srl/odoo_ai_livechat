@@ -1,13 +1,14 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    ai_endpoint = fields.Char(
+    default_ai_endpoint = fields.Char(
         string="AI Endpoint",
-        config_parameter='mi_modulo.ai_endpoint'
+        config_parameter="odoo_ai_livechat.default_ai_endpoint"
     )
-    ai_api_key = fields.Char(
+
+    default_ai_api_key = fields.Char(
         string="AI API Key",
-        config_parameter='mi_modulo.ai_api_key'
+        config_parameter="odoo_ai_livechat.default_ai_api_key"
     )
