@@ -5,7 +5,9 @@
     'summary': 'AI Agent integration with Odoo Livechat and agent handoff',
     'license': 'LGPL-3',
     'depends': ['im_livechat', 'mail'],
-    'data': [],
+    'data': [
+    'views/res_config_settings_views.xml',
+     ],
     'installable': True,
     'auto_install': False,
     'application': False,
