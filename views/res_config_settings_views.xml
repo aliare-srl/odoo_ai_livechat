@@ -10,20 +10,20 @@
                    <div class="row mt16 o_settings_container">
                        <div class="col-12 col-lg-6 o_setting_box">
                            <div class="o_setting_left_pane">
-                               <field name="default_ai_endpoint"/>
+                               <field name="ai_endpoint"/>
                            </div>
                            <div class="o_setting_right_pane">
-                               <label for="default_ai_endpoint"/>
+                               <label for="ai_endpoint"/>
                                <div class="text-muted">URL del endpoint de la API de IA</div>
                            </div>
                        </div>
 
                        <div class="col-12 col-lg-6 o_setting_box">
                            <div class="o_setting_left_pane">
-                               <field name="default_ai_api_key" password="True"/>
+                               <field name="ai_api_key" password="True"/>
                            </div>
                            <div class="o_setting_right_pane">
-                               <label for="default_ai_api_key"/>
+                               <label for="ai_api_key"/>
                                <div class="text-muted">Clave API privada</div>
                            </div>
                        </div>
