@@ -7,5 +7,7 @@ class ResConfigSettings(models.TransientModel):
         string="AI Endpoint",
         config_parameter='mi_modulo.ai_endpoint'
     )
-    default_ai_api_key = fields.Char('Default AI API Key',
-                                    config_parameter='ai_livechat.default_api_key')
+    ai_api_key = fields.Char(
+        string="AI API Key",
+        config_parameter='mi_modulo.ai_api_key'
+    )
